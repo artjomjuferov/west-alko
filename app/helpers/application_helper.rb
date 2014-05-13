@@ -3,14 +3,14 @@
 module ApplicationHelper
 
   def make_type_list
-    @types_en = {own: 'Own', foreign: 'Foreign', flood:  'Flood'} 
-    @types_ru = {own: 'Свое', foreign: 'Чужое', flood: 'Разлив'}
+    @types_en = {own: 'Own', foreign: 'Foreign'} 
+    @types_ru = {own: 'Собственные марки', foreign: 'Привлеченные марки'}
     I18n.locale == :en ? @types_en : @types_ru
   end
 
   def alco_type_list
-    @types_en = {all: 'All', vine: 'Vine', vodka: 'Vodka', whiskey: 'Whiske'} 
-    @types_ru = {all: 'Все', vine: 'Вино', vodka: 'Водка', whiskey: 'Виски'}
+    @types_en = {all: 'All', wine: 'Wine', vodka: 'Vodka', whiskey: 'Whiskey'} 
+    @types_ru = {all: 'Все', wine: 'Вино', vodka: 'Водка', whiskey: 'Виски'}
     I18n.locale == :en ? @types_en : @types_ru
   end
 
@@ -27,8 +27,8 @@ module ApplicationHelper
   end
 
   def mail_list
-    @types_en = {quick: 'Quick Contact', name: 'Name', email: 'Email Address', message: 'Message', send: "Send Email"} 
-    @types_ru = {quick: 'Обратная Связь', name: 'Имя', email: 'Электронная почта', message: 'Сообщение', send: "Отослать Эмайл"}
+    @types_en = {quick: 'Quick Contact', name: 'Name', email: 'Email Address', message: 'Message', send: "Send email"} 
+    @types_ru = {quick: 'Обратная Связь', name: 'Имя', email: 'Электронная почта', message: 'Сообщение', send: "Отправить email"}
     I18n.locale == :en ? @types_en : @types_ru
   end
 

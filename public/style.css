@@ -51,7 +51,7 @@ table {
 ----------------------------------------------------------------------*/
 body {
 	margin: 0 auto;
-	background: #333 url(images/backgrounds/1.5.jpg) repeat fixed top center;
+	background: #ffffff;
 	color: #7A7A7A;
 	line-height: 18px;
 	font-family: "Tahoma", Helvetica, Arial;
@@ -176,7 +176,10 @@ mark {
 textarea { 
 	white-space:pre; 
 }
-
+footer {
+	height: 165px;
+	background: #fff url(images/head.png) repeat-x top center;
+}
 /*	Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
 .grid_1,
@@ -711,8 +714,9 @@ body[class^="frame_"] div.frame_10 { background: url(images/frames/10.png) repea
 
 .head {
 	position: relative;
-	background: #fff url(images/head.jpg) repeat-x top center;
+	background: #fff url(images/head.png) repeat-x top center;
 	border-top: 5px solid #191919;
+	height: 165px;
 }
 .headBG {
 	width: 100%;
@@ -724,7 +728,7 @@ body[class^="frame_"] div.frame_10 { background: url(images/frames/10.png) repea
 .logo {
 	float: left;
 	margin: 30px 0;
-	width: 217px;
+	width: 800px;
 }
 .header_ads {
 	margin: 20px 0;
@@ -1231,7 +1235,7 @@ li li a .sf-sub-indicator {  border-bottom: 0 !important }
 
 .header_v4 .logo {
 	float: none;
-	margin: 30px auto;
+	margin: 0 auto;
 }
 .header_v4 .sf-menu {
 	float: none;
@@ -4418,7 +4422,7 @@ a.notification-close {
 	display: block;
 	color: #BFBFBF;
 	background: #fff;
-	height: 100%;
+	height: 60px;
 }
 .detailes h5 {
 	margin: 0 0 2px 0;
@@ -4733,6 +4737,9 @@ a.notification-close {
 
 /*	Footer
 ----------------------------------------------------------------------*/
+footer > p {
+	display: none;
+}
 #footer {
 	background: #333 url(images/footer-pattern.png) repeat;
 	padding: 50px 0 0;
